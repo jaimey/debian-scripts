@@ -1,7 +1,22 @@
-# debian-scripts
+# Notificaciones Telegram 
+Envía notificaciones a Telegram en Ubuntu o Debian a traves de bash
+## Instalación
 
-Various installation & administration scripts for Debian server.
+Entrar como superusuario
+```bash
+sudo su
+```
+Descargar y ejecutar el instalador
+```bash
+wget -O - https://raw.githubusercontent.com/jaimey/debian-scripts/master/telegram-notify/telegram-notify-install.sh | bash
+```
 
-Most of these scripts are used by some articles available under
+## Configuración
+Configurar los parametros `api-key` y `user-id`
+```bash
+sudo nano /etc/telegram-notify/telegram-notify.conf
+```
 
-http://www.bernaerts-nicolas.fr/linux/
+
+#### Fuente
+Based on the tutorial at http://bernaerts.dyndns.org/linux/75-debian/351-debian-send-telegram-notification created by [@NicolasBernaerts](https://github.com/NicolasBernaerts)
