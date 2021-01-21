@@ -14,7 +14,7 @@ wget -O - https://raw.githubusercontent.com/jaimey/debian-scripts/master/telegra
 ## Configuración
 Configurar los parametros `api-key` y `user-id`
 ```bash
-sudo nano /etc/telegram-notify/telegram-notify.conf
+sudo nano /etc/telegram-notify.conf
 ```
 
 
